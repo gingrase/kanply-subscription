@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Enroll Kanply</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <link rel='icon' href='images/logo-kanply.png'/>
+</head>
+
+<body>
+  <div class="banner" id="topBanner">
+    <img class="logo" src="images/process.png" alt="Kanply">
+    <span>KANPLY</span>
+  </div>
+  
+<div class="content">
+  <div class="sideBySide" id="left">
+    <div class="banner" id="leftBanner">
+      <img class="logo" src="images/process.png" alt="Kanply">
+      <span>KANPLY</span>
+    </div>
+    <div class="footer" id="footer">
+      <span><a href="#" class="link">Terms</a> · <a href="#" class="link">Privacy</a> · <a href="#" class="link">Policies</a></span>
+    </div>
+  </div>
+
+  <div class="sideBySide" id="right">
+    <div class="instructions" id="whyToSubscribe">
+      <p>Enroll KANPLY in your team and he will:</p> 
+      <ul>
+        <li>identify your obligations and suggest information security objectives</li> 
+        <li>coordinate efforts to protect your organization</li> 
+        <li>make YOU <em>shine</em> by enabling you to fullfil efficiently the role of CISO</li>
+      </ul>
+    </div>
+
+    <div class="instructions" id="callToAction">
+      <p>All of that while you keep your focus on your business...</p>  
+      <p>Do you think the same thing I think: you deserve a raise ;)</p>
+      <p>You'd be a fool not to start today, right ? (your infos will stay between you and us)</p>    
+    </div>
+
+    <form action="" method="get" class="subscription-form">
+      <div class="subscription-fieldset">
+        <div class="subscription-input">
+          <label for="first-name">First Name</label>
+          <input id="first-name" name="first-name" type="text" placeholder="Patrick" pattern="^[a-zA-ZèÈêÊéëËÉàÀïÏîÎôÖôÔçÇ .'-]+$" required/>
+          <div class="error-message">Please enter a valid first name (only letters and "'", "." or "-")</div>
+        </div>
+        <div class="subscription-input">
+          <label for="last-name">Last Name</label>
+          <input id="last-name" name="last-name" type="text" placeholder="Boucher" pattern="^[a-zA-ZèÈêÊéëËÉàÀïÏîÎôÖôÔçÇ .'-]+$" required/>
+          <div class="error-message">Please enter a valid last name (only letters and "'", "." or "-")</div>
+        </div>
+        <div class="subscription-input">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="joe@example.com"/>
+          <div class="error-message">Please enter a valid email address</div>
+        </div>
+        <div class="subscription-input">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="phone" placeholder="(555) 555-5555" pattern="[0-9- ()]+"/>
+          <div class="error-message">Please enter a valid phone number (in the "(555) 555-5555" format)</div>
+        </div>
+        <div class="subscription-input">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="********" minlength="8" required/>
+          <div class="error-message">Please enter a valid password (8 characters or more)</div>
+        </div>
+        <div class="subscription-input">
+          <label for="password-confirm">Confirm Password</label>
+          <input id="password-confirm" name="password-confirm" type="password" placeholder="********" minlength="8" required/>
+          <div class="error-message">Please enter a valid password (8 characters or more)</div>
+        </div>
+      </div>
+      <div class="subscription-button">
+        <button>I want KANPLY to work for me</button>
+      </div>
+    </form>
+
+    <div class="footnote" id="linkToLogin">
+      Already have an account? <strong><a href="#" class="link">Log in</a></strong>
+    </div>
+
+    <div class="footer" id="bottomFooter">    
+      <span><a href="#" class="link">Terms</a> · <a href="#" class="link">Privacy</a> · <a href="#" class="link">Policies</a></span>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
