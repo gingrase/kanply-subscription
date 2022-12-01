@@ -2,17 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Enroll Kanply</title>
-    <link rel='stylesheet' href='styles.css'/>
-    <link rel='icon' href='images/logo-kanply.png'/>
+  <meta charset="UTF-8">
+  <title>Enroll Kanply</title>
+  <link rel='stylesheet' href='styles.css'/>
+  <link rel='icon' href='images/logo-kanply.png'/>
+  <script>
+    function validatePasswords() {
+      const x = document.getElementById("password");
+      const y = document.getElementById("password-confirm");
+      if (x.value !== y.value) {
+        document.getElementById("passwordsNotTheSame").style.display = "block";
+      } else {
+        document.getElementById("passwordsNotTheSame").style.display = "none";
+      }
+    }
+  </script>
 </head>
 
 <body>
-  <div class="banner" id="topBanner">
-    <img class="logo" src="images/process.png" alt="Kanply">
-    <span>KANPLY</span>
-  </div>
+<div class="banner" id="topBanner">
+  <img class="logo" src="images/process.png" alt="Kanply">
+  <span>KANPLY</span>
+</div>
   
 <div class="content">
   <div class="sideBySide" id="left">
@@ -37,8 +48,8 @@
 
     <div class="instructions" id="callToAction">
       <p>All of that while you keep your focus on your business...</p>  
-      <p>Do you think the same thing I think: you deserve a raise ;)</p>
-      <p>You'd be a fool not to start today, right ? (your infos will stay between you and us)</p>    
+      <p>Do you think the same thing I think: you deserve a raise 😉</p>
+      <p>You'd be a fool not to start today, right ? (Psst... your infos will stay between you and us)</p>    
     </div>
 
     <form action="" method="get" class="subscription-form">
@@ -65,13 +76,13 @@
         </div>
         <div class="subscription-input">
           <label for="password">Password</label>
-          <input id="password" name="password" type="password" placeholder="********" minlength="8" required/>
+          <input id="password" name="password" type="password" placeholder="********" minlength="8" oninput="validatePasswords()" required/>
           <div class="error-message">Please enter a valid password (8 characters or more)</div>
         </div>
         <div class="subscription-input">
           <label for="password-confirm">Confirm Password</label>
-          <input id="password-confirm" name="password-confirm" type="password" placeholder="********" minlength="8" required/>
-          <div class="error-message">Please enter a valid password (8 characters or more)</div>
+          <input id="password-confirm" name="password-confirm" type="password" placeholder="********" minlength="8" oninput="validatePasswords()" required/>
+          <div class="error-message" id="passwordsNotTheSame">Passwords are not the same</div>
         </div>
       </div>
       <div class="subscription-button">

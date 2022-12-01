@@ -27,6 +27,10 @@
     display: none;
 }
 
+#passwordsNotTheSame {
+    display: none;
+}
+
 .link:link,
 .link:visited {
   color: inherit;
